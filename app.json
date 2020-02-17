@@ -1,0 +1,17 @@
+{
+  "name": "Telegra.ph upload Bot",
+  "description": "You can upload photos on telegra.ph using this bot.",
+  "keywords": [
+    "bot",
+    "telegram",
+    "telegra.ph",
+    "hasibul",
+    "Bangladesh"
+  ],
+  "repository": "https://github.com/hasibulkabir/telegraphbot",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Add your own bot token. Get token from botfather",
+    },
+  },
+}
