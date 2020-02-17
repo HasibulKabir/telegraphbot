@@ -35,7 +35,7 @@ def upload(update, context):
         update.message.reply_text("File size is greater than 5MB")
         return
     photo = context.bot.get_file(update.message.document.file_id)
-    mime = photo.file_name[-3:].lower()
+    mime = update.message.document.file_name[-3:].lower()
     supported = ["jpg", "peg", "png", "gif"]
     if not mime in supported:
         return
