@@ -9,7 +9,6 @@
     "hasibul",
     "Bangladesh"
   ],
-  
   "repository": "https://github.com/hasibulkabir/telegraphbot",
   "env": {
     "BOT_TOKEN": {
@@ -17,8 +16,7 @@
       "value": ""
     },
   },
-  "addons": [
-  ],
-  "buildpacks": [
-  ]
+  "buildpacks": [{
+      "url": "heroku/python"
+  }]
 }
