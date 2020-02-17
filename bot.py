@@ -30,13 +30,15 @@ def upload_cmd(update, context):
 
 
 def upload(update, context):
-    if not update.message.document.file_name.endswith("jpg" or "png" or "jpeg" or "gif"):
-        return
     size = update.message.document.file_size
-    if size > 20971520:
-        update.message.reply_text("File size is greater than 20Mb")
+    if size > 5242880:
+        update.message.reply_text("File size is greater than 5MB")
         return
     photo = context.bot.get_file(update.message.document.file_id)
+    mime = photo.file_name[-3:].lower()
+    supported = ["jpg", "peg", "png", "gif"]
+    if not mime in supported:
+        return
     photo.download(f'{str(update.message.from_user.id)}.jpg')
     files={'files': open(f'{str(update.message.from_user.id)}.jpg','rb')}
     r = requests.post("https://telegra.ph/upload", files=files)
