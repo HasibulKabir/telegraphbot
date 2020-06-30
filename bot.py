@@ -57,8 +57,7 @@ def error(update, context):
 
 
 if __name__ == '__main__':
-    updater = Updater(token=os.environ.get(
-        "BOT_TOKEN", None), use_context=True)
+    updater = Updater(token=os.environ.get("BOT_TOKEN", None), use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start_cmd))
     dp.add_handler(MessageHandler(Filters.photo, upload_cmd))
