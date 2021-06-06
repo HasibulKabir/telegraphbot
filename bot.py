@@ -21,7 +21,7 @@ logger.setLevel(logging.INFO)
 
 
 def start_cmd(update, context):
-    update.message.reply_text(f"Hello {update.message.from_user.first_name}.\n\nI can upload photos from telegram to telegra.ph 🤫")
+    update.message.reply_text(f"Hello {update.message.from_user.first_name}.\n\nI am disney team image to url generator bot project by @disneygrou my owner @doreamonfans1 join my channel to use me @disneygrou 😉")
 
 
 def upload_cmd(update, context):
