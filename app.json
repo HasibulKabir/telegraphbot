@@ -1,24 +1,14 @@
 {
-  "name": "Telegra.ph upload bot",
-  "description": "You can upload photos on telegra.ph using this bot.",
-  "repository": "https://github.com/hasibulkabir/telegraphbot",
-  "logo": "https://raw.githubusercontent.com/HasibulKabir/Raw-Package/master/IMG_20200526_114905_024.jpg",
-  "keywords": [
-    "bot",
-    "telegram",
-    "telegra.ph",
-    "hasibul",
-    "Bangladesh"
-  ],
-  "env": {
-     "BOT_TOKEN": {
-      "description": "Add your own bot token. Get token from botfather",
-      "value": ""
-    }
-   },
-   "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ]
+    "name": "Telegra.ph upload bot",
+    "description": "You can upload photos on telegra.ph using this bot.",
+    "repository": "https://github.com/hasibulkabir/telegraphbot",
+    "logo": "https://raw.githubusercontent.com/HasibulKabir/Raw-Package/master/IMG_20200526_114905_024.jpg",
+    "keywords": ["bot", "telegram", "telegra.ph"],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Add your own bot token. Get token from Bot Father. https://t.me/BotFather",
+            "value": ""
+        }
+    },
+    "buildpacks": [{ "url": "heroku/python" }]
 }
