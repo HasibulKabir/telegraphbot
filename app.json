@@ -8,6 +8,10 @@
         "BOT_TOKEN": {
             "description": "Add your own bot token. Get token from Bot Father. https://t.me/BotFather",
             "value": ""
+        },
+        "SHOW_SOURCE_URL": {
+            "description": "Show source url in the end of the message.",
+            "value": "true"
         }
     },
     "buildpacks": [{ "url": "heroku/python" }]
