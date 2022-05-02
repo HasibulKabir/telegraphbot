@@ -60,7 +60,7 @@ class UploadSuccess(BaseModel):
 
     @property
     def url(self):
-        return f"https://telegra.ph/{self.src}"
+        return f"https://telegra.ph{self.src}"
 
 
 class UploadError(BaseModel):
